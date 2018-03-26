@@ -83,3 +83,9 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: YouTubePlayerDelegate {
+    
+    func playerReady(videoPlayer: YouTubePlayerView) {}
+    func playerStateChanged(videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {}
+    func playerQualityChanged(videoPlayer: YouTubePlayerView, playbackQuality: YouTubePlaybackQuality) {}
+}

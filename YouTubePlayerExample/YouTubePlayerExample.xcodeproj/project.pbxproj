@@ -12,7 +12,21 @@
 		50BB8AED1A7D914C00216B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BB8AEB1A7D914C00216B49 /* Main.storyboard */; };
 		50BB8AEF1A7D914C00216B49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BB8AEE1A7D914C00216B49 /* Images.xcassets */; };
 		50BB8AF21A7D914C00216B49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BB8AF01A7D914C00216B49 /* LaunchScreen.xib */; };
+		A5136D2120694DE50010040D /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5136D2020694DE50010040D /* YouTubePlayer.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A58A9BB820695A7D002E4662 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50BB8AE21A7D914C00216B49 /* YouTubePlayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubePlayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +36,7 @@
 		50BB8AEC1A7D914C00216B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50BB8AEE1A7D914C00216B49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50BB8AF11A7D914C00216B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A5136D2020694DE50010040D /* YouTubePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YouTubePlayer.framework; path = "../../../../../Users/Ren/Library/Developer/Xcode/DerivedData/YouTubePlayer-aedgnsdxjfbsoncbeyghljqnxvjw/Build/Products/Debug-iphoneos/YouTubePlayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5136D2120694DE50010040D /* YouTubePlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +54,7 @@
 		50BB8AD91A7D914C00216B49 = {
 			isa = PBXGroup;
 			children = (
+				A5136D2020694DE50010040D /* YouTubePlayer.framework */,
 				50BB8AE41A7D914C00216B49 /* YouTubePlayerExample */,
 				50BB8AE31A7D914C00216B49 /* Products */,
 			);
@@ -82,6 +99,7 @@
 				50BB8ADE1A7D914C00216B49 /* Sources */,
 				50BB8ADF1A7D914C00216B49 /* Frameworks */,
 				50BB8AE01A7D914C00216B49 /* Resources */,
+				A58A9BB820695A7D002E4662 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,9 +271,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YouTubePlayerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilesvangruisen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -264,9 +284,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YouTubePlayerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gilesvangruisen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
